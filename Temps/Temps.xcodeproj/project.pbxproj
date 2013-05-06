@@ -24,7 +24,9 @@
 		AA159ECE1737F28100D8045A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA159EA81737F28000D8045A /* UIKit.framework */; };
 		AA159ECF1737F28100D8045A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA159EAA1737F28000D8045A /* Foundation.framework */; };
 		AA159ED71737F28100D8045A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA159ED51737F28100D8045A /* InfoPlist.strings */; };
-		AA159EDA1737F28100D8045A /* TempsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA159ED91737F28100D8045A /* TempsTests.m */; };
+		AA159EE51737F7BB00D8045A /* AForecastrSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AA159EE41737F7BB00D8045A /* AForecastrSpec.m */; };
+		AA159EE81738007A00D8045A /* AForecastIO.m in Sources */ = {isa = PBXBuildFile; fileRef = AA159EE71738007A00D8045A /* AForecastIO.m */; };
+		AA159EE91738007A00D8045A /* AForecastIO.m in Sources */ = {isa = PBXBuildFile; fileRef = AA159EE71738007A00D8045A /* AForecastIO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +62,9 @@
 		AA159ECC1737F28100D8045A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		AA159ED41737F28100D8045A /* TempsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TempsTests-Info.plist"; sourceTree = "<group>"; };
 		AA159ED61737F28100D8045A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AA159ED81737F28100D8045A /* TempsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TempsTests.h; sourceTree = "<group>"; };
-		AA159ED91737F28100D8045A /* TempsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempsTests.m; sourceTree = "<group>"; };
+		AA159EE41737F7BB00D8045A /* AForecastrSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AForecastrSpec.m; sourceTree = "<group>"; };
+		AA159EE61738007A00D8045A /* AForecastIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AForecastIO.h; sourceTree = "<group>"; };
+		AA159EE71738007A00D8045A /* AForecastIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AForecastIO.m; sourceTree = "<group>"; };
 		B525588A6B6E4905920648A7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		E970D4BD5E044B4F924E34F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,8 +102,6 @@
 				AA159ED21737F28100D8045A /* Tests */,
 				AA159EA71737F28000D8045A /* Frameworks */,
 				AA159EA61737F28000D8045A /* Products */,
-				B525588A6B6E4905920648A7 /* Pods.xcconfig */,
-				48F0D9C60D844FEF901F1FE2 /* Pods-TempsTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +130,8 @@
 		AA159EAE1737F28000D8045A /* Temps */ = {
 			isa = PBXGroup;
 			children = (
+				AA159EE61738007A00D8045A /* AForecastIO.h */,
+				AA159EE71738007A00D8045A /* AForecastIO.m */,
 				AA159EC01737F28100D8045A /* MainStoryboard.storyboard */,
 				AA159EB71737F28100D8045A /* AAppDelegate.h */,
 				AA159EB81737F28100D8045A /* AAppDelegate.m */,
@@ -142,6 +145,7 @@
 		AA159EAF1737F28000D8045A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B525588A6B6E4905920648A7 /* Pods.xcconfig */,
 				AA159EB01737F28000D8045A /* Temps-Info.plist */,
 				AA159EB11737F28000D8045A /* InfoPlist.strings */,
 				AA159EB41737F28100D8045A /* main.m */,
@@ -156,8 +160,7 @@
 		AA159ED21737F28100D8045A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				AA159ED81737F28100D8045A /* TempsTests.h */,
-				AA159ED91737F28100D8045A /* TempsTests.m */,
+				AA159EE41737F7BB00D8045A /* AForecastrSpec.m */,
 				AA159ED31737F28100D8045A /* Supporting Files */,
 			);
 			name = Tests;
@@ -167,6 +170,7 @@
 		AA159ED31737F28100D8045A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48F0D9C60D844FEF901F1FE2 /* Pods-TempsTests.xcconfig */,
 				AA159ED41737F28100D8045A /* TempsTests-Info.plist */,
 				AA159ED51737F28100D8045A /* InfoPlist.strings */,
 			);
@@ -347,6 +351,7 @@
 				AA159EB51737F28100D8045A /* main.m in Sources */,
 				AA159EB91737F28100D8045A /* AAppDelegate.m in Sources */,
 				AA159EC51737F28100D8045A /* AViewController.m in Sources */,
+				AA159EE81738007A00D8045A /* AForecastIO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA159EDA1737F28100D8045A /* TempsTests.m in Sources */,
+				AA159EE51737F7BB00D8045A /* AForecastrSpec.m in Sources */,
+				AA159EE91738007A00D8045A /* AForecastIO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

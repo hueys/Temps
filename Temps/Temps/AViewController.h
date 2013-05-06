@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AViewController : UIViewController
-
+@property (strong, nonatomic) IBOutlet UILabel* conditions;
+@property (strong, nonatomic) IBOutlet UILabel* temp;
 @end
